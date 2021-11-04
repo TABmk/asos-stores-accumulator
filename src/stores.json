@@ -1,0 +1,71 @@
+[{
+    "country": "ZW",
+    "currency": "USD",
+    "lang": "en-GB",
+    "store": "ROW"
+}, {
+    "country": "ES",
+    "currency": "EUR",
+    "lang": "es-ES",
+    "store": "ES"
+}, {
+    "country": "SK",
+    "currency": "EUR",
+    "lang": "en-GB",
+    "store": "ROE"
+}, {
+    "country": "DE",
+    "currency": "EUR",
+    "lang": "de-DE",
+    "store": "DE"
+}, {
+    "country": "NF",
+    "currency": "AUD",
+    "lang": "en-AU",
+    "store": "AU"
+}, {
+    "country": "YT",
+    "currency": "EUR",
+    "lang": "fr-FR",
+    "store": "FR"
+}, {
+    "country": "RU",
+    "currency": "RUB",
+    "lang": "ru-RU",
+    "store": "RU"
+}, {
+    "country": "VI",
+    "currency": "USD",
+    "lang": "en-US",
+    "store": "US"
+}, {
+    "country": "DK",
+    "currency": "DKK",
+    "lang": "da-DK",
+    "store": "DK"
+}, {
+    "country": "GB",
+    "currency": "GBP",
+    "lang": "en-GB",
+    "store": "COM"
+}, {
+    "country": "VA",
+    "currency": "EUR",
+    "lang": "it-IT",
+    "store": "IT"
+}, {
+    "country": "NL",
+    "currency": "EUR",
+    "lang": "nl-NL",
+    "store": "NL"
+}, {
+    "country": "PL",
+    "currency": "PLN",
+    "lang": "pl-PL",
+    "store": "PL"
+}, {
+    "country": "SE",
+    "currency": "SEK",
+    "lang": "sv-SE",
+    "store": "SE"
+}]

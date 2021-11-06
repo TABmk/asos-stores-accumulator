@@ -3,6 +3,7 @@
 }
 
 .prd {
+  margin: 5px;
   border: 1px solid black;
   border-radius: 1em;
 }
@@ -12,6 +13,27 @@
 .prd_img {
   border-radius: 1em 1em 0 0;
   width: 100%;
+}
+
+.priceSpoiler {
+  cursor: pointer;
+  background-color: #d5d5d5;
+  border-radius: 0 0 1em 1em;
+  text-align: center;
+}
+
+tr:hover:not(:first-child) {
+  background-color: #809fc1;
+  cursor: pointer;
+}
+
+tr:not(:first-child) {
+  font-size: 14px;
+}
+
+.tableContainer {
+  overflow: hidden;
+  max-height: 120px;
 }
 
 table {

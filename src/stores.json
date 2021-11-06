@@ -1,6 +1,6 @@
 [{
     "country": "ZW",
-    "currency": "USD",
+    "currency": "GBP",
     "lang": "en-GB",
     "store": "ROW"
 }, {
@@ -10,7 +10,7 @@
     "store": "ES"
 }, {
     "country": "SK",
-    "currency": "EUR",
+    "currency": "GBP",
     "lang": "en-GB",
     "store": "ROE"
 }, {
@@ -20,12 +20,12 @@
     "store": "DE"
 }, {
     "country": "NF",
-    "currency": "AUD",
+    "currency": "GBP",
     "lang": "en-AU",
     "store": "AU"
 }, {
     "country": "YT",
-    "currency": "EUR",
+    "currency": "GBP",
     "lang": "fr-FR",
     "store": "FR"
 }, {
@@ -35,12 +35,12 @@
     "store": "RU"
 }, {
     "country": "VI",
-    "currency": "USD",
+    "currency": "GBP",
     "lang": "en-US",
     "store": "US"
 }, {
     "country": "DK",
-    "currency": "DKK",
+    "currency": "GBP",
     "lang": "da-DK",
     "store": "DK"
 }, {
@@ -55,17 +55,17 @@
     "store": "IT"
 }, {
     "country": "NL",
-    "currency": "EUR",
+    "currency": "GBP",
     "lang": "nl-NL",
     "store": "NL"
 }, {
     "country": "PL",
-    "currency": "PLN",
+    "currency": "GBP",
     "lang": "pl-PL",
     "store": "PL"
 }, {
     "country": "SE",
-    "currency": "SEK",
+    "currency": "GBP",
     "lang": "sv-SE",
     "store": "SE"
 }]

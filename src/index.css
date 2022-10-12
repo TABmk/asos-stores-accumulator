@@ -22,6 +22,11 @@
   text-align: center;
 }
 
+tr:nth-child(2) {
+  background-color: #9dbd9c82;
+  cursor: pointer;
+}
+
 tr:hover:not(:first-child) {
   background-color: #809fc1;
   cursor: pointer;

@@ -9,6 +9,8 @@ import './App.css';
 const urlTemplate = 'https://www.asos.com/api/product/search/v2/categories/';
 const LIMIT = 200;
 
+let _items = [];
+
 function App() {
   const [items, setItems] = useState([]);
   const [page, setPage] = useState(0);
@@ -67,6 +69,7 @@ function App() {
       }
   }, []);
 
+
   const getData = () => {
     if (!URL) {
       return;
@@ -84,6 +87,9 @@ function App() {
       // let hasNextPage = false;
       Promise.all(promises).then((data) => {
         data.forEach((shop, i) => {
+          if (!shop.products) {
+            return
+          }
           const _storeItems = [ ...storeItems ];
           _storeItems[i].count = shop.itemCount;
           _storeItems[i].loaded += shop.products.length;
@@ -114,8 +120,11 @@ function App() {
           });
         })
 
+        // console.log(_items);
+
         // setHasNext(hasNextPage);
-        setItems([...items, ...objectToArray(newItems )]);
+        setItems([..._items, ...objectToArray(newItems )]);
+        _items = [...items, ...objectToArray(newItems )];
       });
     }
   }
@@ -129,18 +138,18 @@ function App() {
 
   return (
   <div>
-    Promocode % <input type="number" onChange={(e) => handlePromocode(e.target.value)} /> <br />
-    Category <input type="text" onChange={handleCategory} />
     {
       storeItems.map(e => (
         <div key={e.store}>{e.store}: {e.count} items ({e.loaded} loaded)</div>
       ))
     }
+    Promocode % <input type="number" onChange={(e) => handlePromocode(e.target.value)} /> <br />
+    Category <input type="text" onChange={handleCategory} /><br />
     Price: <button onClick={() => sortItems('pricel')}>🔼</button> <button onClick={() => sortItems('priceu')}>🔽</button>
     {URL ? <Grid fluid className="container">
       <Row>
         {items.map((item) => (
-          <Col key={item.id + Math.random()} xs={12} md={6} lg={3}>
+          <Col key={item.id + Math.random()} xs={6} md={3} lg={2.5}>
             <ProductCard
               promocode={promocode}
               rates={rates}
